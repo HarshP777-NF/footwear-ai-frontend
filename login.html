@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <h2>Sales Agent Login</h2>
+  <form onsubmit="return login(event)">
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      const pw = document.getElementById("password").value;
+      if (pw === "footwear123") {
+        localStorage.setItem("auth", "ok");
+        window.location.href = "chat.html";
+      } else {
+        alert("Incorrect password.");
+      }
+    }
+  </script>
+</body>
+</html>
