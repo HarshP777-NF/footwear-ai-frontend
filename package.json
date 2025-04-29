@@ -1,16 +1,4 @@
 "scripts": {
-  "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-}
-"scripts": {
-  "start": "node server.js"
-}
-"scripts": {
   "start": "node server.js",
-  "build": "your-build-command"
-}
-"engines": {
-  "node": "16.x"
+  "build": "your-build-command" // if applicable
 }
